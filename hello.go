@@ -3,14 +3,21 @@ import "fmt"
 
 
 func main() {
-	var idade int
-	var nome string
-	var dinheiro float64
+	n, i := fetchUserdata()
+	printMessage(n, i)
+}
+
+
+func fetchUserdata() (string, int) {
+	var n string
+	var i int
 	fmt.Println("Digite sua idade: ")
-	fmt.Scan(&idade)
-	fmt.Println("Digite seu nome: ")
-	fmt.Scan(&nome)
-	fmt.Println("Digite seu saldo bancário: ")
-	fmt.Scan(&dinheiro)
-	fmt.Printf("Hello!, %s, você tem %d anos!\nPossui %.2f na conta\n", nome, idade, dinheiro)
+	fmt.Scan(&i)
+	fmt.Println("Digite seu Nome: ")
+	fmt.Scan(&n)
+	return n, i
+}
+
+func printMessage(n string, i int) {
+	fmt.Printf("Olá, %s, tudo bem? Você tem %d anos!\n", n, i)
 }
