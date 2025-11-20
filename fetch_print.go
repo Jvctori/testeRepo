@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 
 func fetchUserdata() (string, int) {
@@ -15,5 +18,6 @@ func fetchUserdata() (string, int) {
 
 func printMessage(n string, i int) {
 	fmt.Printf("Olá, %s, tudo bem? Você tem %d anos!\n", n, i)
+	fmt.Print(" ", math.MaxFloat32)
 }
 
