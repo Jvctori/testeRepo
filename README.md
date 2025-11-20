@@ -1,3 +1,3 @@
 # testRepo
 
-__another go notation for practice__
+__another go repo for practice__
